@@ -1,0 +1,47 @@
+
+    .rocket-one {
+        position: relative;
+        width: 60px;
+        height: 20px;
+        background: silver;
+        border-radius: 20px
+    }
+    .window-one{
+        position: absolute;
+        top: 5px;
+        left: 30%;
+        transform: translateX(-50%);
+        width: 10px;    
+        height: 10px;
+        background: blue;
+        border-radius: 50%;
+    }
+    .fire-one{
+        position: absolute;
+        bottom: -20px;
+        top: 3px;
+        left: 100%;
+        transform: translateX(-50%);
+        width: 30px;
+        height: 15px;
+        background: orange;
+        border-radius: 50%;
+        animation: fireAnimation 0.5s infinite alternate;
+    }
+    
+
+        @keyframes fireAnimation {
+            0% {
+                width:  30px;
+                background: orange;
+                box-shadow: 0 0 10px yellow;
+            }
+            100% {
+                width: 40px;
+                background: red;
+                box-shadow: 0 0 15px white;
+            }
+        }
+        .rocket{
+            opacity: 0;
+        }
